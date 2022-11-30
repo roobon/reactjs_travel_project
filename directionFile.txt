@@ -1,0 +1,52 @@
+template Design
+1.E:\xampp\htdocs>npx create-react-app travelapp
+2.E:\xampp\htdocs>cd travelapp
+3.E:\xampp\htdocs\travelapp>npm start
+4.E:\xampp\htdocs\travelapp>npm install react-router-dom --save
+
+5. Folder and component creation:
+	(a) src/components(Header.js, Footer.js, Slider.js)
+	(b) src/pages(Home.js, About.js, Service.js, Tours.js, Blog.js, Index.js)
+	(c) rfc for all components
+
+6.Routing:
+	a) App.js (import { Routes, Route } from "react-router-dom";
+		   import About from "./pages/About;)
+
+	*******function & return er pore*******
+	<Routes>
+      <Route path="/" element={<Index />} >
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+      
+      </Route>
+    </Routes>
+
+	b) index.js (import { BrowserRouter } from "react-router-dom";)
+			 <BrowserRouter>
+    				<App />
+  			</BrowserRouter>
+
+7. Template inside head tag of index.html=>public/index.html
+   Template inside body tag of index.html=>src/Index.js
+   Template inside footer area script of index.html=>public/index.html before body
+
+
+
+
+href="css
+href="assets/css
+
+src="js
+src="assets/js
+
+src="images
+src="assets/images
+
+.png">
+.png"/>
+
+class
+className
+
+style={{color: "red}}
